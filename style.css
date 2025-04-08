@@ -1,0 +1,561 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Шапка */
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.btn {
+    width: 216px;
+    height: 41px;
+    top: 30px;
+    left: 1164px;
+    border: 1px solid;
+    /* Обводка */
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Герой-секция */
+.hero {
+    background: url('/Nature/images/Картинка\ сурков.svg') no-repeat center;
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    width: 1320px;
+    height: 696px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    overflow: visible;
+
+}
+
+.hero h1 {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: start;
+    margin: 0;
+    width: 1047px;
+    height: 228px;
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 205px;
+
+}
+
+.hero p {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 275;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+    margin-top: 190px;
+    margin-bottom: 20px;
+    margin-left: 985px;
+    margin-right: 0px;
+    display: block;
+    color: white;
+    visibility: visible;
+    opacity: 1;
+    width: 378px;
+    height: 48px;
+    text-indent: 0%;
+}
+
+.circle-btn {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    top: 613px;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #BF632F;
+    text-align: center;
+    line-height: 140px;
+    border-radius: 100% !important;
+    text-decoration: none;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.circle-btn::after {
+    content: "";
+    position: absolute;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Центрируем внешнюю обводку */
+}
+
+/* Раздел миссии */
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background: white;
+}
+
+.mission img {
+    border-radius: 50px;
+    position: relative;
+    right: 2.7%;
+    margin-top: 3.1%;
+}
+
+.mission h2 {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 756px;
+    height: 102px;
+    top: 900px;
+    position: absolute;
+    text-align: start;
+    color: #3E3E3E;
+}
+
+.mission p {
+    width: 751px;
+    height: 138px;
+    padding-top: 15%;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #3E3E3E;
+}
+
+.mission-btn {
+    display: inline-block;
+    position: absolute;
+    background-color: #BC5E28;
+    color: #171717;
+    text-align: center;
+    line-height: 215%;
+    border-radius: 50px !important;
+    width: 751px;
+    height: 66px;
+    text-decoration: none;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 1%;
+}
+
+/* Статистика */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    /* Разрешает перенос элементов */
+    justify-content: center;
+    gap: 40px;
+    /* Пространство между элементами */
+    color: #3E3E3E;
+    max-width: 1500px;
+    /* Ограничиваем ширину контейнера */
+    margin: auto;
+    /* Центрируем */
+}
+
+.stats div {
+    text-align: center;
+    width: 45%;
+}
+
+.stats h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50%;
+    letter-spacing: 0%;
+
+}
+
+.stats p {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50%;
+    letter-spacing: 0%;
+}
+
+/* Как мы работаем */
+.how-we-work {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 1900px;
+    margin: auto;
+    padding: 50px 20px;
+    background: white;
+    position: relative;
+    /* Позволяет использовать абсолютное позиционирование */
+    padding-bottom: 14%;
+    padding-top: 5%;
+}
+
+.how-we-work-images {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    bottom: 5%;
+}
+
+.delphins {
+    width: 317px;
+    height: 317px;
+    border-radius: 50px;
+    position: absolute;
+    right: 68%;
+}
+
+.giraffa {
+    width: 240px;
+    height: 240px;
+    border-radius: 50px;
+    position: absolute;
+    top: 99%;
+    left: 30%;
+}
+
+.how-we-work-text {
+    font-family: "Kulim Park", sans-serif;
+    max-width: 800px;
+    text-align: left;
+    position: absolute;
+    left: 53%;
+    color: #3E3E3E;
+    top: 8%;
+}
+
+.how-we-work h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60%;
+    letter-spacing: 0%;
+    width: 499px;
+    text-align: center;
+    position: relative;
+    right: 0%;
+}
+
+.how-we-work p {
+    position: relative;
+    right: 0%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    max-width: 470px;
+    width: 526px;
+    margin-bottom: 5%;
+}
+
+.how-we-work ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.how-we-work ul::after {
+    content: "";
+    display: block;
+    width: 695px;
+    /* Ширина полосы */
+    height: 1px;
+    /* Высота полосы */
+    background-color: #3E3E3E;
+    /* Цвет полосы */
+    margin-top: 20px;
+    /* Отступ сверху, если нужно */
+    right: 12%;
+    /* Выровнять по правому краю */
+    position: relative;
+}
+
+.how-we-work li {
+    margin: 20px 0;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 200%;
+    letter-spacing: 0%;
+    text-align: start;
+    position: relative;
+    right: 15%;
+    padding-left: 20px;
+    /* Добавляет отступ слева для полоски */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    /* Добавляет немного пространства справа */
+}
+
+.how-we-work li::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+    width: 695px;
+    /* Ширина полосы */
+    height: 1%;
+    /* Высота полосы */
+    background-color: #3E3E3E;
+    /* Цвет полосы (можно изменить) */
+    border-radius: 4px;
+}
+
+.how-we-work li::after {
+    content: "→";
+    font-size: 24px;
+    color: #3E3E3E;
+    /* Цвет стрелочки (можно изменить) */
+    position: relative;
+    left: 10px;
+    /* Регулирует отступ стрелочки от текста */
+}
+
+.donation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.donation img {
+    width: 1330px;
+    /* Ограничение по ширине */
+    object-fit: cover;
+}
+
+.donation .btn {
+    position: absolute;
+    top: 64%;
+    left: 42%;
+    color: white;
+    width: 402px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 0%;
+    font-family: "Kulim Park", sans-serif;
+    margin: auto;
+}
+
+
+
+/* Подвал */
+.footer {
+    padding-bottom: 30px;
+}
+
+.footer-top-border {
+    border-top: 1px solid #3E3E3E;
+   
+    margin-left: 610px;
+    margin-right: 610px;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    color: #3E3E3E;
+    font-family: "Kulim Park", sans-serif;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #3E3E3E;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.newsletter input[type="email"] {
+    width: 107%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: none;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: start;
+
+}
+
+.privacy {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: relative;
+    color: #979797;
+
+}
+
+.privacy input {
+    margin-right: 5px;
+}
+
+.social-buttons a {
+    margin-top: 9%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;    
+    color: #979797;
+    text-decoration: none;
+    background-color: transparent;
+    min-width: 31px;
+}
+
+.social-buttons a:hover {
+    background-color: #eee;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 50%;
+    letter-spacing: 0%;
+    color: #979797;    
+    padding-top: 20px;
+
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 110px;
+    width: 110px;
+    margin-right: 10px;
+}
+
+.footer-contacts,
+.footer-meta {
+    margin-top: 5%;
+    max-width: 400px;
+}
